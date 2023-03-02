@@ -1,44 +1,53 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Studi Kasus: Validasi Input HTML 5</title>
+    <!-- Title -->
+    <title>Tugas 3 Studi Kasus</title>
 </head>
-
 <body>
-    <h3>Formulir Pendaftaran</h3>
+    <!-- Heading -->
+    <h3>Studi Kasus: Validasi Input HTML5</h3>
+
     <form action="" method="post">
         <table border="0">
+            <!-- Row 1 -->
             <tr>
-                <td>Nama:</td>
-                <td><input type="text" name="nama" placeholder="Masukan Nama Lengkap Anda" size="25" required></td> (Usia min 17-30)
+                <td>Nama </td>
+                <!-- Input nama yang harus diisi huruf dan spasi dengan keterangan wajib yg tertera diisi-->
+                <td> : <input type="text" name="nama" pattern="[A-Za-z ]+" placeholder="Nama" size="25" required> </td>
+            </tr>
+
+            <!-- Row 2 -->
+            <tr>
+                <td>Usia</td>
+                <!-- Input usia yang harus diisi usia minimal 17 dan maximal 30 dengan keterangan wajib diisi -->
+                <td> : <input type="number" min="17" max="30" name="usia" required> (Usia min 17-30)</td>
+            </tr>
+
+            <!-- Row 3 -->
+            <tr>
+                <td>Email</td>
+                <!-- Input email memasukkan elemen @ dalam input box email yg tersedia dengan keterangan wajib diisi -->
+                <td> : <input type="email" name="email" placeholder="nama_email@gmail.com" size="25" required></td>
             </tr>
 
             <tr>
-                <td>Usia:</td>
-                <td><input type="text"  name="usia" placeholder="Masukan Usia Anda" size="25" required>(Usia min 17-30)</td>
+                <td>Web</td>
+                <!-- Input web menggunakan jenis inputan 'url' dengan keterangan wajib diisi -->
+                <td> : <input type="url" name="web" placeholder="http://" size="30" required></td>
             </tr>
 
             <tr>
-                <td>Email:</td>
-                <td><input type="text" name="email" placeholder="Masukan Email Anda" size="25" required></td>
-            </tr>
-
-            <tr>
-                <td>Web:</td>
-                <td><input type="text" name="email" placeholder="http://"></td>
-            </tr>
-
-            <tr>
-                <td>Password:</td>
-                <td><input type="text" name="password" placeholder="Semua karakter, min 8" size="25" maxlength="" required></td>
+                <td>Password</td>
+                <!-- Input password menggunakan semua karakter (minimal 8 karakter) dengan keterangan wajib diisi -->
+                <td> : <input type="password" name="pass" minlength="8" placeholder="Semua karakter, min 8" size="20" required></td>
             </tr>
 
             <tr>
                 <td></td>
-                <td>
-                    <input type="submit" value="Submit" />
-                </td>
+                <!-- Input submit untuk mengirimkan semua inputan yang sudah diisi -->
+                <td>&nbsp; <input type="submit" value="Submit"></td>
+                <!--&nbsp untuk ngasi spasi-->
             </tr>
         </table>
     </form>
