@@ -3,10 +3,10 @@
 /*1. Lingkaran */
 
 #lingkaran {
-    background-color: beige;
-    -moz-border-radius: 200px;
+    background-color: beige;                /*  warna background */
+    -moz-border-radius: 200px;                 /* yg bikin rounded */
     -webkit-border-radius: 200px;
-    text-align: center;
+    text-align: center;                     /*  posisi text */
     display: table-cell;
     vertical-align: middle;
     width: 200px;
@@ -20,8 +20,8 @@
 #lengkung {
     width: 250px;
     padding: 10px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;          /* yg bikin rounded */
+    border-top-left-radius: 20px;        /* yg bikin rounded */
     border: 2px solid purple;
 }
 
@@ -31,5 +31,5 @@
     width: 250px;
     padding: 10px;
     border: 2px solid grey;
-    box-shadow: 10px 10px 5px grey;
+    box-shadow: 10px 10px 5px grey;         /* yang ngatur ada shadow */
 }
