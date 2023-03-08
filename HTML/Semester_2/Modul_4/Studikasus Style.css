@@ -1,0 +1,35 @@
+/* Style Untuk Studi Kasus */
+
+/*1. Lingkaran */
+
+#lingkaran {
+    background-color: beige;
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border: 2px solid brown;
+}
+
+/* 2. Lengkung  */
+
+#lengkung {
+    width: 250px;
+    height: 200px;
+    padding: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 2px solid purple;
+}
+
+/* 3. shadow */
+
+#shadow {
+    width: 200px;
+    padding: 10px;
+    box-shadow: 10px 10 px grey;
+}
