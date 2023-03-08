@@ -19,7 +19,6 @@
 
 #lengkung {
     width: 250px;
-    height: 200px;
     padding: 10px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -29,7 +28,8 @@
 /* 3. shadow */
 
 #shadow {
-    width: 200px;
+    width: 250px;
     padding: 10px;
-    box-shadow: 10px 10 px grey;
+    border: 2px solid grey;
+    box-shadow: 10px 10px 5px grey;
 }
