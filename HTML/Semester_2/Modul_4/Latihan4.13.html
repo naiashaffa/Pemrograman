@@ -2,43 +2,30 @@
 <html>
 
 <head>
-    <title>Demo Posisi Division</title>
-    
+    <title>Demo Rounded Border</title>
     <style type="text/css">
-        #box1 {
-            float: left;
-            width: 200px;
-            height: 50px;
-            background: peachpuff;
-            border: 1px solid palevioletred;
-        }
-
-        #box2 {
-            float: right;
-            padding: 10px;
-            width: 300px;
-            height: 100px;
-            border: 1px solid fuchsia;
-        }
-
-        #box3 {
-            /* me-reset pegaturan float left maupun right */
-            clear: both;
-            float: left;
-            width: 200px;
-            height: 50px;
-            background: paleturquoise;
-            border: 1px solid aqua;
+        #round {
+            background-color: bisque;
+            -moz-border-radius: 5px;            /* membuat round pada border*/
+            -webkit-border-radius: 5px;
+            border: 2px solid orangered;
+            padding: 1opx;
+            width: 310px;
         }
     </style>
 </head>
 
 <body>
-    <div id="box1">
-        Paragraf ini di dalam tag &lt;div&gt;
+    <div id="round">
+        Well the faster that you come
+        <br />The sooner that you leave
+        <br />I must be going down
+        <br />'Cause I can hardly breathe
     </div>
 
-    <div id="box2">
+    <br />
+
+    <div id="round">
         I wish I was your joke
         <br />Passed around in sordid bars
         <br />When you can't drive your car anymore
@@ -47,9 +34,6 @@
         <br />I don't mind
     </div>
 
-    <div id="box3">
-        Paragraf ini di dalam tag &lt;div&gt;
-    </div>
 </body>
 
 </html>
