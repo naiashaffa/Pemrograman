@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="style_mod07.css" type="text/css" />
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet"
-href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
     <title>Part 'Tables'</title>
 </head>
 <body>
@@ -38,6 +41,13 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
     <br>
     <div class="row">
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+    </div>
+
+    <br>
+    <div class="row">
         <div class="col-sm-4">.col-md-4</div>
         <div class="col-sm-8">.col-md-8</div>
     </div>    
@@ -56,29 +66,29 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
     <br>
     <br>
-    <div class="container-fluid">
-        <table class="table table-hover">
-            <thead>
+    <div class="container-fluid">           <!-- setiap aksi di awali dg container -->
+        <table class="table table-striped">     <!-- tipe table yang digunakan (striped = belang )-->
+            <thead>         <!-- row head (judul ) -->
                 <tr>
-                    <th>First Name</th>
+                    <th>First Name</th>     <!-- kiri ke kanan-->
                     <th>Last Name</th>
                     <th>Email</th>
                 </tr>
             </thead>
-            
-            <tbody>
+                        
+            <tbody>         <!-- row body (isi)-->
                 <tr>
                     <td>Naia</td>
                     <td>Camila</td>
                     <td>naia@example.com</td>
                 </tr>
-
+    
                 <tr>
                     <td>Mary</td>
                     <td>Moe</td>
                     <td>nary@example.com</td>
                 </tr>
-
+    
                 <tr>
                     <td>Melody</td>
                     <td>Yang</td>
