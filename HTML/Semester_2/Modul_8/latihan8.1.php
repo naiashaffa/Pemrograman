@@ -15,6 +15,10 @@
 
     <?php
     echo 'Kode PHP';
-    ?>    
+    ?>
+    
+    <br>
+    <br>
+    <p> Kode <?php echo 'PHP'; ?> di HTML </p>
 </body>
 </html>
