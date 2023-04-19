@@ -12,6 +12,8 @@
     function do_print() {
         // Mencetak informasi timestamp
         echo time();
+        // Ouput = 1681912450
+
     }
 
     // Memanggil prosedur
@@ -43,11 +45,14 @@
 
     // Mencetak dengan huruf tebal
     print_text('Pemrograman Web 2023');
+    // Ouput = Pemrograman Web 2023 (cetak tebal)
 
     echo '<br>';
     
     // Mencetak dengan huruf reguler
     print_text('Pemrograman Web 2023', false)
+    // Ouput = Pemrograman Web 2023
+
     ?>
 </body>
 </html>

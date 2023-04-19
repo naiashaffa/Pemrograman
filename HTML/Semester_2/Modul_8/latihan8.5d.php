@@ -13,6 +13,8 @@
     foreach ($arr as $value) {
         echo $value;
     }
+    // Ouput = 1234567
+
     ?>
 </body>
 </html>
