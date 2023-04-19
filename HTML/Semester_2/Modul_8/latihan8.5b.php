@@ -16,6 +16,9 @@
         // Inkremen counter 
         $y++;
     } while ($y <= 10);
+
+    // Ouput = 012345678910
+
     ?>
 </body>
 </html>

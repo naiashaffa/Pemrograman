@@ -15,7 +15,7 @@
     if ($a > $b) {
         echo 'a lebih besar dari b';
     }
-
+    // Ouput = a lebih besar dari b
     ?>
 </body>
 </html>

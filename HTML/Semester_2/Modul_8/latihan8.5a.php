@@ -15,6 +15,8 @@
         // Inkremen counter
         $r++;
     }
+    // Ouput = 0123456789
+
     ?>
 </body>
 </html>

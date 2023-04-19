@@ -19,6 +19,7 @@
     } else {
         echo 'a kurang dari b';
     }
+    // Ouput = a sama dengan b
 
     ?>
 </body>

@@ -17,7 +17,7 @@
     } else {
         echo 'a Tidak Lebih besar dari b';
     }
-
+    // Ouput = a Tidak lebih besar dari b
     ?>
 </body>
 </html>

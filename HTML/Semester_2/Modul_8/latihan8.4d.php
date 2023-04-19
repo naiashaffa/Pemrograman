@@ -18,9 +18,10 @@
     } elseif ($k == 2) {
         echo 'k equals 2';
     }
+    // Ouput = k equals 0
 
     echo '<br>';
-    
+
     //Ekuivalen dengan pendekatan SWITCH
     switch ($k) {
         case 0:
@@ -36,6 +37,8 @@
              echo 'ERROR';
             break;
     }
+    // Ouput = k equals 0
+
     ?>
 </body>
 </html>
