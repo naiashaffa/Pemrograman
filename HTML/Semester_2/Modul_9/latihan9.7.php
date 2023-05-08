@@ -9,7 +9,6 @@
 <body>
     <form action="<?php $_SERVER['PHP_SELF'];?>" method="post"> 
     Hobby    :
-    // menggunakan array ('[]')
     <input type="checkbox" name="input_hobby[]" value="Membaca"/> Membaca
     <input type="checkbox" name="input_hobby[]" value="Belanja"/> Belanja
     <input type="checkbox" name="input_hobby[]" value="Memasak"/> Memasak
