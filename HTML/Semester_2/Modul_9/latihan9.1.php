@@ -8,7 +8,6 @@
 </head>
 <body>
     <br />
-    // metode GET
     <form action="<?php $_SERVER['PHP_SELF']; ?>" method="get"> Nama :
         <input type="text" name="input_nama" />
         <br />
