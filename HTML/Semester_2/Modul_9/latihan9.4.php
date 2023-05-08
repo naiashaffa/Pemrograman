@@ -25,6 +25,10 @@
         echo 'Hello, ' . $_POST['input_nama'];
         echo '<br />';
         echo 'Have a nice day!';
+        /* output :
+        Hello, Naia Shaffa Camila
+        Have a nice day!
+        */
     }
     ?>
 </body>

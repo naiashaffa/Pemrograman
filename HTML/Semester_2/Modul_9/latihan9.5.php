@@ -8,21 +8,24 @@
 </head>
 <body>
     
-<form action="<?php $_SERVER['PHP_SELF'];?>" method="post" >
-    Jenis Kelamin
-    <br />
-    <input type="radio" name="input_gender" value="Pria"/> Pria
-    <input type="radio" name="input_gender" value="Wanita"/> Wanita
-    <br />
+    <form action="<?php $_SERVER['PHP_SELF'];?>" method="post" >
+        Jenis Kelamin
+        <br />
+        <input type="radio" name="input_gender" value="Pria"/> Pria
+        <input type="radio" name="input_gender" value="Wanita"/> Wanita
+        <br />
 
-    <input type="submit" value="OK"/>
-</form>
+        <input type="submit" value="OK"/>
+    </form>
 
-<?php 
-echo '<br />';
-if (isset($_POST['input_gender'])) {
-    echo $_POST['input_gender'];
-}
-?>
+    <?php 
+    echo '<br />';
+    if (isset($_POST['input_gender'])) {
+        echo $_POST['input_gender'];
+        /* output: 
+        Wanita (sesuai input)
+        */
+    }
+    ?>
 </body>
 </html>

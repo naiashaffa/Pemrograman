@@ -17,6 +17,7 @@
 </head>
 <body>
     <br />
+    // metode GET
     <form action="<?php $_SERVER['PHP_SELF']; ?>" method="get"> Nama :
         <input type="text" name="input_nama" />
         <br />
@@ -24,12 +25,15 @@
         <br />
     </form>
 
-<?php 
-echo '<br />';
-if (isset($_GET['input_nama'])) {
-    echo 'Hello, ' . $_GET['input_nama'];
+    <?php 
     echo '<br />';
-    echo 'Have a nice day!';}
-?>
+    if (isset($_GET['input_nama'])) {
+        echo 'Hello, ' . $_GET['input_nama'];
+        echo '<br />';
+        echo 'Have a nice day!';}
+        /* output :
+        Hello, Naia Shaffa Camila
+        Have a nice day! */
+    ?>
 </body>
 </html>

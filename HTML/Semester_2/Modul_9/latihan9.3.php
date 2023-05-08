@@ -24,11 +24,14 @@
         <br />
     </form>
 
-<?php 
-echo '<br />';
-if (isset($_GET['input_nama'])) {
-    echo 'Metode, ' . $_SERVER['REQUEST_METHOD'];
-}
-?>
+    <?php 
+    echo '<br />';
+    if (isset($_GET['input_nama'])) {
+        echo 'Metode, ' . $_SERVER['REQUEST_METHOD'];       // menampilkan jenis method yg digunakan
+        /* output : 
+        Metode, GET
+        */
+    }
+    ?>
 </body>
 </html>
