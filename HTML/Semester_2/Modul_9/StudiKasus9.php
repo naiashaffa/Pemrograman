@@ -19,17 +19,18 @@
     <script>
         // Fungsi untuk validasi form
         function validateForm() {
-            var username = document.getElementById("input_username").value;
-            var password = document.getElementById("input_password").value;
+            var username = document.getElementById("Username").value;
+            var password = document.getElementById("Password").value;
             if (username == "" || password == "") { 
                 alert("Username dan Password harus diisi."); 
-                document.getElementById("input_username").focus(); 
-                document.getElementById("input_username").select(); 
+                document.getElementById("Username").focus(); 
+                document.getElementById("Username").select(); 
                 return false; 
             }
             if (!/^[a-zA-Z]+$/.test(username) || !/^[a-zA-Z]+$/.test(password)) { 
-                document.getElementById("input_username").focus(); 
-                document.getElementById("input_username").select(); 
+                alert("Username dan Password harus diisi dengan huruf."); 
+                document.getElementById("Username").focus(); 
+                document.getElementById("Username").select(); 
                 return false; 
             }
             return true; 
@@ -37,7 +38,7 @@
     </script>
 </head>
 
-<body>
+<body class="web bg-light">
     <!-- Form HTML -->
     <div class="container-fluid text-center col-13 col-md-8 col-lg-4">
         <div class="card" style="margin-top: 80px; margin-bottom: 60px;">
