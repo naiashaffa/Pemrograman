@@ -1,6 +1,6 @@
 <?php
     if (isset($_COOKIE['username'])) {
-        echo "<h1>Cookie 'uusername' ada</h1><br>Isinya : " . $_COOKIE['username'];
+        echo "<h1>Cookie 'username' ada</h1><br>Isinya : " . $_COOKIE['username'];
     } else {
         echo "<h1>Cookie 'username' TIDAK ada.</h1>";
     }
