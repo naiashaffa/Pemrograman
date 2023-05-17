@@ -7,11 +7,64 @@
         if ($username == "admin" && $password == "12345") {
             // menciptakan session
             $_SESSION['login'] = $username;
-            //menuju ke halaman pemeriksaan session
-            echo "<p align=center>Anda berhasil Login!</p>";
-        }
+            ?>
+            <!DOCTYPE html>
+            <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                    <!-- Bootstrap 5 CSS -->
+                    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+                        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
+                        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+                    </script>
+                    <title>choose menu</title>
+                </head>
+                <body>
+                    <div class="container-fluid">
+                        <h2>Kamu berhasil Log In!</h2>
+                        <p>Pilih tombol di bawah untuk melanjutkan...</p>
+                        <a href="StudiKasus_10.2.php">Beranda</a><br>
+                        <a href="StudiKasus_10.3.php">Log out</a>
+                    </div>
+                </body>
+            </html>               
+            <?php   
+        } else {
+            ?>
+            <!DOCTYPE html>
+            <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                    <!-- Bootstrap 5 CSS -->
+                    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+                        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
+                        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+                    </script>
+                    <title>StudiKasus_10</title>
+                </head>
+                <body>
+                    <div class="container-fluid">
+                        <h2>Kamu Gagal Log In!</h2>
+                        <p>Pilih tombol di bawah untuk kembali ke page Log In...</p>
+                        <a href="StudiKasus_10.1.php">Log in</a><br>
+                    </div>
+                </body>
+            </html>               
+            <?php   
+        } 
     } else {
         ?>
+        <!DOCTYPE html>
         <html lang="en">
         <head>
             <meta charset="UTF-8">
