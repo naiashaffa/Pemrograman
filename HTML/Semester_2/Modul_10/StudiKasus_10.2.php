@@ -1,7 +1,6 @@
-<!-- Memberikan session pada halaman web -->
 <?php
     session_start();
-    if (isset($_SESSION['login'])) { //jika login sudah berhasil maka menampilkan isi session
+    if (isset($_SESSION['login'])) { 
         ?>
         <!DOCTYPE html>
         <head>
@@ -16,7 +15,7 @@
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
                     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
                 </script>
-                <title>StudiKasus_10</title>
+                <title>Studi Kasus Page</title>
         </head>
         <body class="d-flex h-100 text center text-white bg-dark">
             <div class = "cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
@@ -47,14 +46,14 @@
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
                     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
                 </script>
-                <title>StudiKasus_10</title>
+                <title>Studi Kasus Page</title>
         </head>
         <body class="d-flex h-100 text center text-white bg-dark">
             <div class = "cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
                 <main class = "px-3 text-center">
                         <h2>Anda belum berhasil Log In!</h2>
                             <br>Tekan tombol di bawah untuk kembali ke page Log In!<br>
-                        <a href="StudiKasus_10.1.php"><h3>Log In</h3></a>
+                        <a href="StudiKasus_10.php"><h3>Log In</h3></a>
                 </main>
             </div>
         </body>

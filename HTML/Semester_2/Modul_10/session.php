@@ -21,10 +21,10 @@
                 <form action="" method="post">
                     <h2>Log In</h2>
                     <div>
-                        <input class="form-control" type="text" name="user" id="Username" placeholder="Username" style="margin-bottom: 12px">
+                        <input class="form-control" type="text" name="user" id="Username" placeholder="Username" style="margin-bottom: 12px"> //Naia
                     </div>
                     <div>
-                        <input class="form-control" type="password" name="pass" id="Password" placeholder="Password" style="margin-bottom: 12px">
+                        <input class="form-control" type="password" name="pass" id="Password" placeholder="Password" style="margin-bottom: 12px"> //12345
                     </div>
                     <div>
                     <input type="submit" name="login" value="Log In">
