@@ -18,12 +18,15 @@
                 </script>
                 <title>StudiKasus_10</title>
         </head>
-        <body>
-            <div class="container-fluid text-center">
-                <h2>Selamat datang, <?php echo $_SESSION['login']?>!</h2>
-                    Ini adalah halaman beranda !!<br>
-                    Tekan tombol di bawah ini untuk mengakhiri session!<br>
-                <a href="StudiKasus_10.3.php"><h3>Log out</h3></a>
+        <body class="d-flex h-100 text center text-white bg-dark">
+            <div class = "cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+                <main class = "px-3 text-center">
+
+                    <h2>Selamat datang, <?php echo $_SESSION['login']?>!</h2>
+                        Ini adalah halaman beranda !!<br>
+                        Tekan tombol di bawah ini untuk keluar!<br>
+                    <a href="StudiKasus_10.3.php"><h3>Log out</h3></a>
+                </main>
             </div>
         </body>
         </html>
@@ -46,11 +49,13 @@
                 </script>
                 <title>StudiKasus_10</title>
         </head>
-        <body>
-            <div class="container-fluid text-center">
-                <h2>Anda belum berhasil Log In!</h2><br>
-                    Tekan tombol di bawah untuk kembali ke page Log In!<br>
-                <a href="StudiKasus_10.1.php"><h3>Log In</h3></a>
+        <body class="d-flex h-100 text center text-white bg-dark">
+            <div class = "cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+                <main class = "px-3 text-center">
+                        <h2>Anda belum berhasil Log In!</h2>
+                            <br>Tekan tombol di bawah untuk kembali ke page Log In!<br>
+                        <a href="StudiKasus_10.1.php"><h3>Log In</h3></a>
+                </main>
             </div>
         </body>
         </html>

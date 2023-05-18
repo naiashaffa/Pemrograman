@@ -4,7 +4,7 @@
         $username = $_POST['username'];
         $password = $_POST['password'];
         //periksa login
-        if ($username == "admin" && $password == "12345") {
+        if ($username == "naiashaffa" && $password == "admin") {
             // menciptakan session
             $_SESSION['login'] = $username;
             ?>
@@ -24,7 +24,7 @@
                     </script>
                     <title>choose menu</title>
                 </head>
-                <body>
+                <body class="d-flex h-100 text center text-white bg-dark">
                     <div class="container-fluid">
                         <h2>Kamu berhasil Log In!</h2>
                         <p>Pilih tombol di bawah untuk melanjutkan...</p>
@@ -52,7 +52,7 @@
                     </script>
                     <title>StudiKasus_10</title>
                 </head>
-                <body>
+                <body class="d-flex h-100 text center text-white bg-dark">
                     <div class="container-fluid">
                         <h2>Kamu Gagal Log In!</h2>
                         <p>Pilih tombol di bawah untuk kembali ke page Log In...</p>
@@ -103,11 +103,11 @@
             </script>
         </head>
 
-        <body>
+        <body class="d-flex h-100 text center text-white bg-dark">
             <!-- Form HTML -->
-            <div class="container-fluid text-center col-13 col-md-8 col-lg-4">
+            <div class="container-fluid text-center col-13 col-md-8 col-lg-4 text-warning">
                 <div class="card" style="margin-top: 80px; margin-bottom: 60px;">
-                    <h2 style="margin-top: 20px; margin-bottom: 20px;">LOG IN</h2>
+                    <h2 tyle="margin-top: 20px; margin-bottom: 20px;">LOG IN</h2>
 
                     <form action="<?php $_SERVER['PHP_SELF']; ?>" method="post" onsubmit="return validateForm()">
                         <div class="container text-center">
