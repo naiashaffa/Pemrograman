@@ -9,7 +9,7 @@
 <body>
     <h1>Data Mahasiswa</h1>
     <h4>Menambahkan Data Mahasiswa</h4>
-    <form action="post" action="tambah_aksi_full.php">
+    <form action="post" action=".php">
         <table>
             <tr>
                 <td>NIM</td>

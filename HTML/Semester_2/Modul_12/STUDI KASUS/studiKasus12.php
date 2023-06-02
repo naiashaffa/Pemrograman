@@ -13,7 +13,7 @@
     // jika form sudah diisi
     if (isset($_POST['username']) || isset($_POST['password'])) { 
         // jika username dan password sesuai dengan yang ditentukan
-        if ($_POST['username'] === "naia" && $_POST['password'] === "admin") {
+        if ($_POST['username'] === "admin" && $_POST['password'] === "admin") {
             $_SESSION['login'] = $_POST['username'];
             // masuk ke halaman login page
             if (isset($_SESSION['login'])) { 
@@ -34,7 +34,6 @@
                         crossorigin="anonymous">
                     </script>
                     <title>Home Page</title>
-
                 </head>
                 <body class="web bg-white">
                     <!-- HTML -->
@@ -53,21 +52,21 @@
                             <input type="submit" class="nav-link active" name="logout" value="Log Out">
                         </form>
                     </header>
-                    <h1>Data Mahasiswa</h1>
-                    <h4>Menambahkan Data Mahasiswa</h4>
+                    <h1>Data Buku</h1>
+                    <h4>Menambahkan Data Buku</h4>
                     <form method="post" action="insert.php">
                         <table>
                             <tr>
-                                <td>NIM</td>
-                                <td><input type="number" name="nim"></td>
+                                <td>KODE</td>
+                                <td><input type="number" name="kode"></td>
                             </tr>
                             <tr>
-                                <td>Nama</td>
-                                <td><input type="text" name="nama"></td>
+                                <td>JUDUL</td>
+                                <td><input type="text" name="judul"></td>
                             </tr>
                             <tr>
-                                <td>Alamat</td>
-                                <td><input type="test" name="alamat"></td>
+                                <td>STOK</td>
+                                <td><input type="test" name="stok"></td>
                             </tr>
                             <tr>
                                 <td></td>
@@ -75,30 +74,29 @@
                             </tr>
                         </table>
                     </form>
-                    <h4>Menampilkan Data Mahasiswa</h4>
-                    <table class="table table-bordered 50px">
+                    <h4>Menampilkan Data Buku</h4>
+                    <table class="table table-bordered">
                         <tr>
                             <th>No</th>
-                            <th>NIM</th>
-                            <th>Nama</th>
-                            <th>Alamat</th>
+                            <th>Kode</th>
+                            <th>Judul</th>
+                            <th>Stok</th>
                             <th>Action</th>
                         </tr>
                         <?php
                             include("koneksi.php");
                             $no = 1;
-                            $data = mysqli_query($koneksi, "SELECT * FROM mahasiswadat");
+                            $data = mysqli_query($koneksi, "SELECT * FROM datbuku");
                             while($d = mysqli_fetch_array($data)){ ?>
                                 <tr>
                                     <td><?php echo $no++; ?></td>
-                                    <td><?php echo $d['NIM']; ?></td>
-                                    <td><?php echo $d['NAMA']; ?></td>
-                                    <td><?php echo $d['ALAMAT']; ?></td>
+                                    <td><?php echo $d['KODE']; ?></td>
+                                    <td><?php echo $d['JUDUL']; ?></td>
+                                    <td><?php echo $d['STOK']; ?></td>
                                     <td>
-                                        <a href="lihat2.php?nim=<?php echo $d['NIM']; ?>">Lihat</a>
-                                        <a href="edit2.php?nim=<?php echo $d['NIM']; ?>">Edit</a>
-                                        <a href="hapus2.php?nim=<?php echo $d['NIM']; ?>"
-                                        onclick="return confirm('Anda yakin mau menghapus data pada NIM <?php echo $d['NIM'] ?> ini?')">Hapus</a>
+                                        <a href="lihat.php?nim=<?php echo $d['KODE']; ?>">Lihat</a>
+                                        <a href="edit.php?nim=<?php echo $d['KODE']; ?>">Edit</a>
+                                        <a href="hapus.php?nim=<?php echo $d['KODE']; ?>">Hapus</a>
                                     </td>
                                 </tr> 
                                 <?php
@@ -109,12 +107,12 @@
                 </html> 
                 <?php
             } else { 
-                die("Anda belum berhasil Log In! Silahkan login <a href='studikasus.php'>Log In</a>"); // jika belum login jangan melanjutkan
+                die("Anda belum berhasil Log In! Silahkan login <a href='studiKasus12.php'>Log In</a>"); // jika belum login jangan melanjutkan
             }
         } else { // jika username dan password tidak sesuai dengan yang ditentukan
             echo "<p align=center> <font color=red size=4px> Login gagal. Username atau Password salah.";
             echo "<p align=center> <font color=black> Kembali ke halaman Log In...";
-            header('Refresh:4 ; URL=studikasus.php');
+            header('Refresh:4 ; URL=studiKasus12.php');
         }
     } else { 
         ?>
@@ -160,7 +158,7 @@
             <header class="bd-header bg-dark py-3 d-flex align-items-stretch border-bottom border-dark">
                 <div class="container-fluid d-flex align-items-center">
                     <h1 class="d-flex align-items-center fs-4 text-white mb-0">
-                    Teknologi Informasi
+                    Little Story Store
                     </h1>
                 </div>
             </header>
