@@ -30,12 +30,21 @@
             function confirmHelp() {
                 return confirm("Silahkan hubungin nomor 082123456789 \nMohon maaf atas ketidaknyamanannya.");
             }
+
+            function addMore() {
+                window.open("tambah-data.php", "tambah-data", "fullscreen");            
+            }
         </script>
-        <title>Data-Buku Page</title>
+        <title>Data Buku Page</title>
     </head>
 
 <body class="web bg-light">
     <header class="d-flex flex-wrap justify-content-end py-2 mb-3 px-3" >   
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a href="#" class="nav-link" style="color: #000000DE;" onclick="addMore()">Add Books</a>
+            </li>
+        </ul>
         <ul class="nav nav-pills">
             <li class="nav-item">
                 <a href="#" class="nav-link" style="color: #000000DE;" onclick="confirmHelp()">Help Center</a>
@@ -49,10 +58,12 @@
     <div class="container-fluid" style="margin-top: 20px">  
     <div class="d-flex justify-content-start">    
     <form action="" method="post">
-
-    <h3>DATA BUKU</h3>  
+        
+    <div class="tittle" style="color: #6F4E37;">
+        <h3>DATA BUKU</h3>  
+    </div>
     <table class="table table-hover table-bordered">
-    <thead class="table-secondary">
+    <thead class="table" style="background-color: #EADDCA; color: #6F4E37;">
         <tr class="text-center">
             <th>No</th>
             <th>Kode Buku</th>

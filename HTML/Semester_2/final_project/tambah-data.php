@@ -27,9 +27,15 @@
             crossorigin="anonymous">
         </script>
         <script>
+            function bukawindow(){
+                        window.open("buku-data.php", "buku-data", "fullscreen");
+            }
+            function confirmHelp() {
+                return confirm("Silahkan hubungin nomor 082123456789 \nMohon maaf atas ketidaknyamanannya.");
+            }
             function confirmAdd() {
             return confirm("Apakah Anda yakin akan menambahkan data?");
-        }
+            }
         </script>
         <title>Add Data Page</title>
     </head>
@@ -45,64 +51,57 @@
         </form>
     </header>
 
-
-        <div class="container-fluid" style="margin-top: 80px">  
-        <div class="d-flex justify-content-center">        
-        <form action="" method="post">
-        <h2>Tambah Data Buku</h2>
-        <br/>
-        
-        <div class="card" style="background-color: #A7C7E7; color: #191970;">
-        <div class="card-body">
-                <tr>
-                    <td width="100">Kode Buku</td>
-                    <td>
-                        <input type="text" name="kode_buku"></td>
-                    </td>
-                </tr>
-                <tr>
-                    <td width="100">Judul Buku</td>
-                    <td>
-                        <input type="text" name="judul_buku"></td>
-                    </td>
-                </tr>
-                <tr>
-                    <td width="100">Harga Buku</td>
-                    <td>
-                        <input type="text" name="harga_buku"></td>
-                    </td>
-                </tr>
-                <tr>
-                    <td width="100">Stok Buku</td>
-                    <td>
-                        <input type="text" name="stok_buku"></td>
-                    </td>
-                </tr>
-                <tr>
-                    <td ></td>
-                    <td>
-                        <input type="submit" value="Submit" name="proses" onclick="confirmAdd()"></td>
-                    </td>
-                </tr>
+    <section class="bg-light">
+        <div class="container py-3 h-90">
+        <div class="card" style="border-radius: 2rem;background-color: #FFFFFF; color:#7B3F00;">
+        <div class="col-lg-9 d-flex">
+        <div class="card-body p-2 p-lg-4">
+            <h3 class="fw-bold mb-2" style="letter-spacing: 1px;">Tambah Data Buku</h3>
+            <form action="" method="post">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-outline mb-3">
+                                Kode Buku<input type="text" name="kode_buku">
+                    </div>
+                </div>
             </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-outline mb-3">
+                                Judul Buku<input type="text" name="judul_buku">
+                    </div>
+                </div>
             </div>
-
-            <br/>
-            <br/>
-            <br/>
-            <br/>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-outline mb-3">
+                                Harga Buku<input type="text" name="harga_buku">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-outline mb-3">
+                                Stok Buku<input type="text" name="stok_buku">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <input type="submit" class="btn btn-primary" name="proses" value="Submit" onclick="confirmAdd()">
+            </div>
+                
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
 
             <div class="row">
                 <div class="text-center">
                     <h5>Lihat data buku bisa  klik button dibawah ini</h5>
                 </div>
-                <script>
-                    function bukawindow(){
-                        window.open("buku-data.php", "buku-data", "fullscreen");
-                    }
-                </script>
                 <div class="d-flex justify-content-center">
-                    <input type="button" class="btn btn-primary" onclick="bukawindow()" value="View details »">
+                    <input type="button" class="btn btn-info" onclick="bukawindow()" value="View details »">
                 </div>
             </div>
         </form>
@@ -119,6 +118,7 @@
             judul_buku = '$_POST[judul_buku]',
             harga_buku = '$_POST[harga_buku]',
             stok_buku = '$_POST[stok_buku]' ");
+
         }
         ?>
     </body>
